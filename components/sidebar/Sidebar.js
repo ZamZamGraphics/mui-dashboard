@@ -2,6 +2,8 @@ import { Drawer, List, Stack, Toolbar } from "@mui/material";
 import SidebarItem from "./SidebarItem";
 import SidebarItemCollapse from "./SidebarItemCollapse";
 import sidebarRoutes from "@/routes/sidebarRoutes";
+import Link from "next/link";
+import styles from "./sidebar.module.css";
 
 function Sidebar(props) {
   const { window, sidebarWidth, mobileOpen, handleDrawerToggle } = props;
@@ -10,7 +12,9 @@ function Sidebar(props) {
     <List disablePadding>
       <Toolbar sx={{ marginBottom: "20px" }}>
         <Stack sx={{ width: "100%" }} direction="row" justifyContent="center">
-          Company Logo
+          <Link href="/" className={styles.title}>
+            Company Nane
+          </Link>
         </Stack>
       </Toolbar>
       {sidebarRoutes.map((route, index) =>

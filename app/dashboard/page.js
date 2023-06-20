@@ -1,4 +1,4 @@
-export const metadata = { title: "Dashboard" };
+// export const metadata = { title: "Home" };
 
 export default function Home() {
   return (
