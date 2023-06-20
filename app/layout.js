@@ -10,11 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: {
     default: "Home Page",
-    template: "%s | Home Page",
   },
   icons: {
-    icon: "./favicon.png"
-  }
+    icon: "./favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
